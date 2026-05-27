@@ -1,0 +1,11 @@
+Etapa 1 – Interpretação
+1. Quais classes aparecem no problema? Usuario, Produto, TipoUsuario.
+2. Quais atributos são necessários? Usuario (nome, tipo), Produto (nome).
+3. Existe alguma regra de negócio? Somente usuários do tipo ADMIN podem cadastrar produtos.
+4. Existe algum enum? Sim, TipoUsuario (ADMIN, PADRAO).
+5. Qual método representa a ação principal? cadastrarProduto.
+6. O que deve acontecer quando a regra for satisfeita? O sistema confirma o cadastro do produto.
+7. O que deve acontecer quando a regra não for satisfeita? O sistema exibe uma mensagem de erro informando que o usuário não tem permissão.
+
+Etapa 2 – Pseudocódigo
+Se o tipo do usuário for igual a ADMIN, então o cadastro do produto é permitido e uma mensagem de sucesso é exibida. Caso contrário, o cadastro é negado e uma mensagem de erro é exibida.

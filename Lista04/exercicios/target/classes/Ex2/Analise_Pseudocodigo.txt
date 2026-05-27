@@ -1,0 +1,11 @@
+Etapa 1 – Interpretação
+1. Quais classes aparecem no problema? Usuario, Comentario, TipoUsuario.
+2. Quais atributos são necessários? Usuario (nome, tipo), Comentario (texto).
+3. Existe alguma regra de negócio? Somente usuários do tipo PADRAO podem publicar comentários.
+4. Existe algum enum? Sim, TipoUsuario (ADMIN, PADRAO).
+5. Qual método representa a ação principal? publicarComentario.
+6. O que deve acontecer quando a regra for satisfeita? O comentário é publicado com sucesso.
+7. O que deve acontecer quando a regra não for satisfeita? O sistema exibe uma mensagem de erro informando que apenas usuários padrão podem comentar.
+
+Etapa 2 – Pseudocódigo
+Se o tipo do usuário for igual a PADRAO, o sistema permite a publicação do comentário. Caso contrário, o sistema bloqueia a ação e informa a falta de permissão.

@@ -1,0 +1,12 @@
+Etapa 1 – Interpretação
+1. Quais classes aparecem no problema? Usuario, Noticia, TipoUsuario.
+2. Quais atributos são necessários? Usuario (nome, tipo), Noticia (titulo, conteudo).
+3. Existe alguma regra de negócio? Visitantes podem visualizar notícias, mas não podem cadastrar notícias. Apenas EDITORES cadastram.
+4. Existe algum enum? Sim, TipoUsuario (VISITANTE, EDITOR).
+5. Qual método representa a ação principal? visualizarNoticia e cadastrarNoticia.
+6. O que deve acontecer quando a regra for satisfeita? Notícia é visualizada ou cadastrada com sucesso.
+7. O que deve acontecer quando a regra não for satisfeita? O sistema informa que o visitante não tem permissão para cadastrar notícias.
+
+Etapa 2 – Pseudocódigo
+Para visualizar: o sistema exibe a notícia para qualquer usuário.
+Para cadastrar: o sistema verifica se o tipo do usuário é EDITOR. Se sim, cadastra. Se for VISITANTE, nega a ação.
